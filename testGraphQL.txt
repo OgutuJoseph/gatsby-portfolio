@@ -1,0 +1,8 @@
+// sample graphQL query
+
+query MyQuery {
+  site {
+    host
+    port
+  }
+}
