@@ -1,8 +1,20 @@
 // sample graphQL query
-
 query MyQuery {
   site {
     host
     port
+  }
+}
+
+// sample graphQL query 2
+query MyQuery {
+  site {
+    host
+    port
+    siteMetadata {
+      copyright
+      description
+      title
+    }
   }
 }
