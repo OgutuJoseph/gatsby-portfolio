@@ -18,3 +18,23 @@ query MyQuery {
     }
   }
 }
+
+// sample graphQL query 3
+query MyQuery {
+  allFile(filter: {}) {
+    nodes {
+      relativePath
+      relativeDirectory
+    }
+  }
+}
+
+// sample graphQL query 4
+query MyQuery {
+  allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
+    nodes {
+      relativePath
+      relativeDirectory
+    }
+  }
+}
