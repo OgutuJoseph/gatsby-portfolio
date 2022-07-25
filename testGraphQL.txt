@@ -38,3 +38,17 @@ query MyQuery {
     }
   }
 }
+
+// sample graphQL query 5
+query MyQuery {
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+        stack
+        slug
+      }
+    }
+  }
+}
+
