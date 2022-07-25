@@ -52,3 +52,18 @@ query MyQuery {
   }
 }
 
+// sample graphQL query 6
+query MyQuery {
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+        stack
+        slug
+      }
+      id
+    }
+  }
+}
+
+
