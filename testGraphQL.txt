@@ -80,4 +80,40 @@ query MyQuery {
   }
 }
 
+// sample query 8
+query ProjectsPage {
+  allMarkdownRemark(sort: {order: ASC, fields: frontmatter___date}) {
+    nodes {
+      frontmatter {
+        title
+        stack
+        slug
+      }
+      id
+    }
+  }
+  site {
+    siteMetadata {
+      contact
+    }
+  }
+}
 
+// sample query 9
+query ProjectsPage {
+  projects: allMarkdownRemark(sort: {order: ASC, fields: frontmatter___date}) {
+    nodes {
+      frontmatter {
+        title
+        stack
+        slug
+      }
+      id
+    }
+  }
+  contact: site {
+    siteMetadata {
+      contact
+    }
+  }
+}
