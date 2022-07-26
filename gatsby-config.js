@@ -19,6 +19,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Portfolio',
     description: 'This is a sample portfolio website by Gatsby Javasacript',
-    copyright: 'This website is copyright © 2022. Josef.'
+    copyright: 'This website is copyright © 2022. Josef.',
+    contact: 'josef@me.com'
   }
 }
