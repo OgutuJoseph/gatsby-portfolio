@@ -2,6 +2,7 @@
 title: The Dojo Coffee House
 stack: HTML and CSS
 slug: the-dojo-coffee-house
+date: 2022-01-01T00:00:00+00:00
 ---
 
 <!-- above is known as frontmatter -->
