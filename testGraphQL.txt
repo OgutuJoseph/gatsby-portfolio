@@ -1,4 +1,4 @@
-// sample graphQL query
+// sample query
 query MyQuery {
   site {
     host
@@ -6,7 +6,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 2
+// sample query 2
 query MyQuery {
   site {
     host
@@ -19,7 +19,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 3
+// sample query 3
 query MyQuery {
   allFile(filter: {}) {
     nodes {
@@ -29,7 +29,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 4
+// sample query 4
 query MyQuery {
   allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
     nodes {
@@ -39,7 +39,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 5
+// sample query 5
 query MyQuery {
   allMarkdownRemark {
     nodes {
@@ -52,7 +52,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 6
+// sample query 6
 query MyQuery {
   allMarkdownRemark {
     nodes {
@@ -66,7 +66,7 @@ query MyQuery {
   }
 }
 
-// sample graphQL query 7
+// sample query 7
 query MyQuery {
   allMarkdownRemark(sort: {order: ASC, fields: frontmatter___title}) {
     nodes {
@@ -114,6 +114,19 @@ query ProjectsPage {
   contact: site {
     siteMetadata {
       contact
+    }
+  }
+}
+
+// sample query 10
+query MyQuery {
+  file(relativePath: {eq: "banner.png"}) {
+    childImageSharp {
+      fluid {
+        src
+        srcSet
+        sizes
+      }
     }
   }
 }
